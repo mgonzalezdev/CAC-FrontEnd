@@ -1,0 +1,122 @@
+:root{
+    --bg-color:#181419;
+    --primary-color:#9f3647;
+    --secondary-color:#ffc098;
+    --third-color:#db4648;
+    --third-bis-color:#db4648f2;
+    --bg-input-color:#4f31572c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #2a2a2a;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-register.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    padding: 25px 60px;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+
+nav a img {
+    width: 167px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    padding: 20px 70px;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background:rgba(42,42,42 ,1);
+    overflow-y: auto; /* Añade barra de desplazamiento vertical si es necesario */
+    max-height: 80%;
+}
+
+
+/* Estilos para el contenedor principal */
+.user-container {
+    overflow-y: auto; /* Agrega barra de desplazamiento vertical si es necesario */
+    max-height: 300px; /* Altura máxima del contenedor antes de mostrar la barra de desplazamiento */
+    border: 1px solid #ccc; /* Borde para visualización */
+    padding: 10px; /* Espaciado interior */
+  }
+
+  /* Estilos para cada línea de usuario */
+  .user-line {
+    display: flex; /* Usa flexbox para alinear elementos en una sola línea */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    margin-bottom: 10px; /* Espacio entre cada línea de usuario */
+    color: white; /* Color de texto blanco */
+  }
+
+  /* Estilos para el texto del usuario */
+  .user-label {
+    flex: 90%; /* Ocupa el 90% del espacio disponible */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos cuando el texto desborda */
+    color: #fff;
+    
+  }
+
+  /* Estilos para el botón de eliminar */
+  .delete-button {
+    background-color: #ff6347; /* Color de fondo rojo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+
+
+.form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.user-div {
+  display: flex; /* Para que los labels se alineen horizontalmente */
+  margin-bottom: 10px; /* Espacio entre cada user-div, ajusta según tus necesidades */
+}
+
+.user-label {
+  white-space: nowrap; /* Evita que los textos largos se dividan en múltiples líneas */
+}
+.user-label:not(:last-child) {
+  margin-right: 10px; /* Espacio entre cada label dentro de user-div, excepto el último */
+}

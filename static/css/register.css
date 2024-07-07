@@ -206,6 +206,21 @@ form .form-terms :where(label, a) {
     border: 2px solid red; 
 }
 
+.maintenance-link {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.maintenance-link {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    margin-left: 10px; /* Espacio entre el enlace y el título de Registro */
+    color: #ffffff; /* Color del texto */
+}
+
+.maintenance-link:hover {
+    color: #edff85; /* Color del texto al pasar el mouse sobre el enlace */
+}
+
 @media (max-width: 740px) {
     body::before {
         display: none;

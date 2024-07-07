@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - CAC-Movies</title>
+    <title>Ingreso - CAC-Movies</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,48 +31,24 @@
     </header>
     <main>
         <section class="form-wrapper">
-            <h2>Registro</h2>
-            <a href="user-maintenance.html" class="maintenance-link">
-                <i class="fas fa-cog"></i> Mantenimiento
-            </a>
-            <form action="#" id="formRegister" onclick="validarFormulario()">
-                <div class="form-control">
-                    <label>Nombre</label>
-                    <input type="text" required name="firstname" id="firstname" >
-                </div>
-                <div class="error" id="error-firstname"></div>
-                <div class="form-control">
-                    <label>Apellido</label>
-                    <input type="text" required name="lastname" id="lastname">
-                </div>
-                <div class="error" id="error-lastname"></div>
+            <h2>Iniciar sesión</h2>
+            <form action="#" id="formLogin" method="GET" novalidate>
+                
                 <div class="form-control">
                     <label>Email</label>
                     <input type="email" required name="email" id="email">
                 </div>
                 <div class="error" id="error-email"></div>
+                
                 <div class="form-control">
                     <label>Contraseña</label>
                     <input type="password" required name="password" id="password">
                 </div>
-                <div class="error" id="error-password"></div>
-                <div class="form-control">
-                    <label id="label-birthdate">Fecha de Nacimiento</label>
-                    <input type="date" required name="birthdate" id="birthdate">
-                </div>
-                <div class="form-control">
-                    <select name="country" id="country" class="form-select">
-                        <!-- poblado automáticamente desde register-select.js-->
-                    </select>
-                </div>
-                <div class="form-terms"> 
-                    <div class="terms">
-                        <input type="checkbox" id="terms">
-                        <label for="terms">Acepto términos y condiciones</label>
-                    </div>
-                </div>
-                <button type="submit" id="btn-send" onclick="">Registrarse</button>
 
+                <div class="error" id="error-password"></div>
+
+                
+                <button id="btn-send" >Dale!</button>
                 <div class="form-help"> 
                     <a href="#">Necesitas ayuda?</a>
                 </div>
@@ -80,7 +56,6 @@
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../static/js/validation-register.js"></script>
-    <script src="../static/js/register-add.js"></script>
-    <script src="../static/js/register-select.js"></script>
+    <script src="../static/js/check-user.js"></script>
+    <script src="../static/js/validation-login-ev.js"></script>
 </body>
